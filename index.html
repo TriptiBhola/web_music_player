@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music App</title>
+  <link rel="stylesheet" href="music.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-img">
+      <img src="images/logo.png" alt="" />
+    </div>
+
+    <div class="nav-part2">
+      <div class="search-bar">
+        <button class="search-icon" title="search">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search songs...." name="search" />
+      </div>
+
+      <div class="login-box">
+          <i class="far fa-user"></i>
+        <a href="">Login</a>
+      </div>
+      <i class="fas fa-bars" style="color: #ffffff" id="bars"></i>
+    </div>
+  </nav>
+  <section class="section1">
+    <ul class="menu">
+      <li><a href="">
+          <bold>All</bold>
+        </a></li>
+      <li><a href="">Tranding Now</a></li>
+      <li><a href="">Old Songs</a></li>
+      <li><a href="">New Songs</a></li>
+      <li class="gener-list">
+        <a href="">Mood & Gener <i class="fas fa-caret-down"></i></a>
+        <ul class="list-item">
+          <li><a href="#">Party Songs</a></li>
+          <li><a href="#">Dance Songs</a></li>
+          <li><a href="#">Bollywood Songs</a></li>
+          <li><a href="#">Romantic Songs</a></li>
+          <li><a href="#">90's songs</a></li>
+          <li><a href="#">Bhakti songs</a></li>
+        </ul>
+      </li>
+      <li class="top-album"><a href="">Top Albums <i class="fas fa-caret-down"></i></a>
+        <ul class="album-list">
+          <li><a href="#">Top Hindi</a></li>
+          <li><a href="#">Top English</a></li>
+          <li><a href="#">Top Telugu</a></li>
+          <li><a href="#">Top Tamil</a></li>
+          <li><a href="#">Top Bhojpuri</a></li>
+          <li><a href="#">Top Bhajan</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Top Artist </i></a>
+      </li>
+      <li class="top-playlist">
+        <a href="">Top Playlist <i class="fas fa-caret-down"></i></a>
+        <ul class="play-list">
+          <li><a href="#">Trending Hindi Songs</a></li>
+          <li><a href="#">Top English Songs</a></li>
+          <li><a href="#">Trending Reels Songs</a></li>
+          <li><a href="#">Top Romantic Hits</a></li>
+          <li><a href="#">Top Latin HIts</a></li>
+
+        </ul>
+      </li>
+    </ul>
+
+    <div class="slider-container">
+      <div class="slide-images">
+        <img src="images/bollywood-dancing-graphic-art.webp" alt="img1" class="images" />
+        <img src="images/Gremin-Media.jpg" alt="img2" class="images" />
+        <img src="images/hq720.jpg" alt="img3" class="images" />
+        <img src="images/justin-bieber-singing-into-microphone-stylized-text-for-best-songs-graphic-art_1200x628.jpg"
+          alt="img4" class="images" />
+        <img src="images/old-bollywood-songs-text-with-hindi-woman-looking-left.webp" alt="img5" class="images" />
+        <img src="images/Top-Romantic-Songs-Lyrics-in-Hindi.webp" alt="img6" class="images" />
+        <img src="images/two-lovers-standing-close-to-one-another.webp" alt="img7" class="images" />
+        <img src="images/media-desktop-yo-yo-honey-singh-live-0-2022-3-16-t-7-35-39.avif" alt="img8" class="images" />
+
+        <img src="images/bollywood-dancing-graphic-art.webp" alt="img1" class="images" />
+        <img src="images/Gremin-Media.jpg" alt="img2" class="images" />
+        <img src="images/hq720.jpg" alt="img3" class="images" />
+        <img src="images/justin-bieber-singing-into-microphone-stylized-text-for-best-songs-graphic-art_1200x628.jpg"
+          alt="img4" class="images" />
+        <img src="images/old-bollywood-songs-text-with-hindi-woman-looking-left.webp" alt="img5" />
+        <img src="images/Top-Romantic-Songs-Lyrics-in-Hindi.webp" alt="img6" />
+        <img src="images/two-lovers-standing-close-to-one-another.webp" alt="img7" />
+      </div>
+      <button id="prevBtn" title="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="nextBtn" title="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+
+    <!-- this is the box for new release songs  -->
+
+
+    <div class="songs-cate">
+      <button Class="slide-btn" id="prev" title="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="cate-name">
+        <h3 class="song-type">New Bollywood Releases</h3>
+        <h4 class="more"><a href="">More</a></h4>
+      </div>
+      <div class="song-cards">
+        <li class="card" id="li1">
+          <img src="images/chaleya.jpeg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Chaleya</p>
+        </li>
+        <li class="card" id="li2">
+          <img src="images/img2.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Heeriye</p>
+        </li>
+        <li class="card" id="li3">
+          <img src="images/img3.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Not Ramaiya Vastavaiya</p>
+        </li>
+        <li class="card" id="li4">
+          <img src="images/img4.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Zinda Banda</p>
+        </li>
+        <li class="card" id="li5">
+          <img src="images/img5.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Laado</p>
+        </li>
+        <li class="card" id="li6">
+          <img src="images/img6.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Kya Loge Tum</p>
+        </li>
+        <li class="card" id="li7">
+          <img src="images/img7.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Gone Girl</p>
+        </li>
+        <li class="card" id="li8">
+          <img src="images/img8.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>What Jhumaka</p>
+        </li>
+      </div>
+      <button class="slide-btn" id="next" title="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- this is the box for top english songs  -->
+
+    <div class="songs-cate songs-cate-2">
+      <button class="slide-btn slide-btn2" id="prev2" title="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="cate-name">
+        <h3 class="song-type">Top English Songs</h3>
+        <h4 class="more"><a href="">More</a></h4>
+      </div>
+      <div class="song-cards song-cards-2">
+        <li class="card card-li" id="li9">
+          <img src="images/img9.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Stay</p>
+        </li>
+        <li class="card card-li" id="li10">
+          <img src="images/img10.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Daspacito</p>
+        </li>
+        <li class="card card-li" id="li11">
+          <img src="images/img11.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>2002</p>
+        </li>
+        <li class="card card-li" id="li12">
+          <img src="images/img12.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Taki Taki</p>
+        </li>
+        <li class="card card-li" id="li13">
+          <img src="images/img13.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Blinding Lights</p>
+        </li>
+        <li class="card card-li" id="li14">
+          <img src="images/img14.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>We Dont talk Anymore</p>
+        </li>
+        <li class="card card-li" id="li15">
+          <img src="images/img15.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>What do you mean</p>
+        </li>
+        <li class="card card-li" id="li16">
+          <img src="images/img16.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Attention</p>
+        </li>
+      </div>
+      <button class="slide-btn slide-btn2" id="next2" title="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+
+    <!-- this is the box for Honey Singh songs  -->
+
+
+    <div class="songs-cate songs-cate-3">
+      <button class="slide-btn slide-btn3" id="prev3" title="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="cate-name">
+        <h3 class="song-type">Honey Singh Songs</h3>
+        <h4 class="more"><a href="">More</a></h4>
+      </div>
+      <div class="song-cards song-cards-3">
+        <li class="card card3" id="li17">
+          <img src="images/img17.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Kuley Kuley</p>
+        </li>
+        <li class="card card-li" id="li18">
+          <img src="images/img18.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Brown Rang</p>
+        </li>
+        <li class="card card-li" id="li19">
+          <img src="images/img19.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Makhna</p>
+        </li>
+        <li class="card card-li" id="li20">
+          <img src="images/img20.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Billo Tu Agg</p>
+        </li>
+        <li class="card card-li" id="li21">
+          <img src="images/img21.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Paris Ka Trip</p>
+        </li>
+        <li class="card card-li" id="li22">
+          <img src="images/img22.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Blue Eyes</p>
+        </li>
+        <li class="card card-li" id="li23">
+          <img src="images/img23.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>Desi Kalakaar</p>
+        </li>
+        <li class="card card-li" id="li24">
+          <img src="images/img24.jpg" alt="" />
+          <button title="play-btn"><i class="fas fa-play"></i></button>
+          <p>First Kiss</p>
+        </li>
+      </div>
+      <button class="slide-btn slide-btn3" id="next3" title="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="music-player">
+      <div class="song-name">
+        <img src="images/img1.jpg" alt="" class="player-song-img">
+        <audio class="audio-player">
+          <source src="Songs/song1.mp3" type="audio/mp3" />
+        </audio>
+        <span class="song-artist">
+          <h3 id="title">Chaleya</h3>
+          <h4 id="artist">Arijit Singh</h4>
+        </span>
+      </div>
+      <div class="control-btns">
+        <i class="fas fa-step-backward" id="prev4" title="Previous"></i>
+        <i class="fas fa-play" id="play" title="Play "></i>
+        <i class="fas fa-step-forward" id="next4" title="Next"></i>
+      </div>
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress-div" id="progressDiv">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <div class="progress-meter">
+        <span class="current-time" id="current-time">0.00</span>
+        <span>|</span>
+        <span class="duration" id="duration">3.20</span>
+      </div>
+      <div class="volume-bar">
+        <i class="fas fa-volume-up"></i>
+        <div class="volume-div">
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" placeholder="volume-bar">
+          <div class="volume"></div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- login box -->
+      <!-- <div class="login-div">
+         <div class="login-img">
+          </div>
+          <div class="login-input">
+            <i class="fas fa-times"></i>
+              <h2>Login/SignUp</h2>
+              <p>Get a personalised experience, and access all your music</p>
+              <input type="number" placeholder="+91" id="input1">
+              <input type="number" name="contact" id="contact" placeholder="Enter your Number"><br>
+              <button class="otp-btn">Send OTP</button>
+          </div>
+          
+      </div> -->
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+    integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+    crossorigin="anonymous"></script>
+  <script src="music.js"></script>
+</body>
+
+</html>
